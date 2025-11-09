@@ -1,64 +1,17 @@
-body{
+#body{
   font-family:Arial, sans-serif;
-  background-color: #f4f4f4;
-  display: flex;
-  justify-content: center;
-  align-items : center;
-  height: 100vh;
-  margin:0;
   background-image:url("images/background\ of\ cv.jpg");
- 
-}
+} 
 
-
-.progress{
-
-  display:flex;
-  justify-content: space-between;
-
-}
-
-.main {
-  background-color: white;
-  padding:30px;
+#main {
   border-radius: 10px;
   width: 700px;
 }
 
-.top-title h2{
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 24px;
-  
-}
+#line-progress{
 
-.top-title{
-  color: #1e40af;
-
-}
-
-.line-progress{
-  width:100%;
   background-color: #ddd;
   border-radius: 20px;
-  height: 10px;
-  margin-bottom:20px;
-  overflow: hidden;
-
-}
-
-.how-long{
-  width:20%;
-  height:100%;
-  background-color: #3b82f6;
-}
-
-.heigh-step {
-
-  font-size: small;
-  display: flex;
-  justify-content: space-evenly;
-  gap:20px;
 
 }
 .step{
@@ -68,35 +21,9 @@ body{
   border-radius: 1em;
   text-align: center;
   border-width: 0.1em;
-   margin-bottom:15px;
-  
-}
-
-.line{
-  width:100%;
-  padding:0;
-  background-color:lightseagreen;
-  border-radius: 8px;
-  height: 5px;
   margin-bottom:15px;
-  overflow: hidden;
 
-
-}
-
-
-.btns{
-  display: flex;
-  justify-content: space-between;
-  margin-top:20px;
-}
-
-.input {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 20px;
-  
-}
+} 
 
 .group1 input{
   
@@ -118,28 +45,6 @@ body{
   width: 300px;
 }
 
-.input:focus{
-  border-color: #3b82f6;
-}
-
-.info-imp h2{
-  color:#1e40af;
-  font-size: 20px;
-  margin-bottom:15px;
-  text-align: center;
-
-}
-
-button{
-  padding: 10px 20px;
-  border:none;
-  border-radius:5px;
-  cursor: pointer;
-  background-color: #1e40af;
-  color:white;
-  font-weight: bold;
-  transition:0.3s;
-}
 
 button:hover {
   background-color: #2563eb;

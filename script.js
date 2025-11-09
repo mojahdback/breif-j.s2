@@ -16,8 +16,9 @@ moveBtn.addEventListener('click', () => {
     if(index >= steps.length){
         index = steps.length - 1;
     }
+    
     sections[index].classList.add('active')
-    steps[index].style.backgroundColor = "green";
+    steps[index].style.backgroundColor = "lightblue";
 
 })
 
@@ -32,7 +33,7 @@ backBtn.addEventListener('click', () => {
     }
 
     sections[index].classList.add('active')
-    steps[index].style.backgroundColor = "green";
+    steps[index].style.backgroundColor = "lightblue";
 
     
 

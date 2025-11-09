@@ -7,25 +7,24 @@
   <title>CV Builder Stepper Form</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body >
+<body id="body" class="bg-gray-200 flex justify-center items-center h-screen m-0">
     <header class="header">
-            <h1  class="text-3xl font-bold underline">CV Builder</h1>
     </header>
 
-    <main class="main">
+    <main id="main" class="bg-white p-8">
         
-          <div class="top-title">
-            <h2 > Formulaire de creation de CV </h2>
-            <div class="progress">
+        <div class="text-blue-700">
+            <h2 class="text-center mb-5 text-2xl"> Formulaire de creation de CV </h2>
+            <div class="flex justify-between">
                 <span>Etape 1 sur 7</span>
                 <span> 15% </span>
             </div>
-            <div class="line-progress">
-                <div class="how-long"></div>
+            <div id="line-progress" class="w-full h-2 mb-5 overflow-hidden">
+                <div class="w-1/5 h-full bg-blue-500"></div>
             </div>
         </div>
 
-        <div class="heigh-step">
+        <div class="text-[small] flex justify-evenly gap-5">
             <span class="step">1.Infos Perso </span>
             <span class="step">2.Details Pro</span>
             <span class="step">3.cometences</span>
@@ -36,15 +35,15 @@
         </div>
 
         <div>
-            <div class="line"></div>
+            <div class="w-full p-0 rounded-lg h-1 mb-4 overflow-hidden bg-[lightseagreen]"></div>
         </div>
 
         <section  id="section1" class="section active">
        
 
         <div class="info-imp">
-            <h2>Informations personnelles</h2>
-            <div class="input">
+            <h2 class="text-blue-700 text-xl mb-4 text-center"><strong>Informations personnelles</strong></h2>
+            <div class="flex justify-around mb-5 ">
                 <div class="group1">
                      <input type="text" placeholder="Nom et prenom">
                      <input type="tel" placeholder="Telephone">
@@ -62,38 +61,139 @@
 
         <!-- Détails professionnels -->
          <section id="section2" class="section ">
-            <p>hello world</p>
+           <form>
+               <h2 class="text-blue-700 text-xl mb-4 "><strong>Détails professionnels</strong></h2>
+            <div>
+                 <label for="titre">Titre du poste :</label><br>
+                 <input class="border text-sm w-[630px] mb-3.5 p-3 rounded-md border-solid border-[#ccc]" type="text" id="titre" name="titre" placeholder="Ex. : Chef de projet, Développeur web" required>
+
+            </div>
+           
+             <label for="resume">Résumé de profil :</label>
+             <textarea class="border text-sm w-[630px] mb-3.5 p-3 rounded-md border-solid border-[#ccc]" id="resume" name="resume" placeholder="Décrivez brièvement votre expérience, vos compétences et vos objectifs professionnels..." required></textarea>
+
+        
+            </form>
 
          </section >
 
          <!-- Compétences techniques et soft skills  -->
-          <section id="section3" class="section ">
-            <p> lock here</p>
-          </section >
+          <!-- <section id="section3" class="section ">
+             <div class="info-imp">
+                 <h2 class="text-blue-700 text-xl mb-4 "><strong>Compétences</strong></h2>
+              <div class="flex justify-between mb-5 ">
+                <div>
+                    <label for="comp">Compétence:</label><br>
+                     <input class="border text-sm w-[300px] mb-3.5 p-2.5 rounded-md border-solid border-[#ccc]" type="text" id="comp"  placeholder="par ex: HTML "><br><br>
+                </div>
+
+                <div >
+                    <label for="niveau">Niveau:</label>
+                     <select  class="border text-sm w-[300px] mb-3.5 p-2.5 rounded-md border-solid border-[#ccc]" id="niveau">
+                         <option value="op1">Très bon </option>
+                         <option value="op2">Bon </option>
+                         <option value="op3">Satisfaisant</option>
+                         <option value="op4">Intermédiaire</option>
+                         <option value="op5">Débutant</option>
+                    
+                    </select>
+                </div>
+              </div>
+
+            
+              </div>
+          </section > -->
 
           <!-- Langues  -->
-          <section id="section4" class="section ">
-            <p>i want to make possiblte</p>
-          </section>
+          <!-- <section id="section4" class="section ">
+             <div class="info-imp">
+            <h2 class="text-blue-700 text-xl mb-4 "><strong>Langues</strong></h2>
+             <div class="flex justify-between">
+                <div>
+                    <label for="lang">Langues:</label><br>
+                     <input class="border text-sm w-[300px] mb-3.5 p-2.5 rounded-md border-solid border-[#ccc]" type="text" id="lang"  placeholder="par ex: Anglais "><br><br>
+                </div>
+
+                <div >
+                    <label for="niveau">Niveau:</label>
+                     <select  class="border text-sm w-[300px] mb-3.5 p-2.5 rounded-md border-solid border-[#ccc]" id="niveau">
+                         <option value="A1">A1</option>
+                         <option value="A2">A2</option>
+                         <option value="B1">B1</option>
+                         <option value="B2">B2</option>
+                          <option value="C1">C1</option>
+                         <option value="C2">C2</option>
+                    </select>
+                </div>
+
+            </div>
+             
+          </section> -->
+
           <!-- Loisirs et intérêts -->
-           <section id="section5" class="section ">
-            <p> mohammed maghri</p>
-           </section>
+           <!-- <section id="section5" class="section ">
+             <div class="info-imp">
+                <h2 class="text-blue-700 text-xl mb-4 "><strong>Loisirs</strong></h2>
+                 <div>
+                      <label for="fonc">Loisir:</label><br>
+                      <input class="border text-sm w-[630px] mb-4 p-3 rounded-md border-solid border-[#ccc]" type="text" id="fonc"  placeholder="par ex: Lecture "><br><br>
+                 </div>
+           </section> -->
 
            <!-- Expériences professionnelles -->
-            <section id="section6" class="section ">
-                <p>more then more</p>
-            </section>
+            <!-- <section id="section6" class="section ">
+                <div class="info-imp">
+                        <h2 class="text-blue-700 text-xl mb-4"><strong>Expérience professionnelle</strong></h2>
+                 <div class="flex justify-between">
+                      <div>
+                      <label for="fonc">Fonction:</label><br>
+                      <input class="border text-sm w-[300px] mb-3.5 p-2.5 rounded-md border-solid border-[#ccc]" type="text" id="fonc"  placeholder="par ex: Marketing internet "><br><br>
+                     </div>
+
+                  <div >
+                      <label for="loca"> Localité:</label><br>
+                      <input class="border text-sm w-[300px] mb-3.5 p-2.5 rounded-md border-solid border-[#ccc]" type="text" id="loca"  placeholder="par ex: Maroc "><br><br>
+                  </div>
+
+                 </div>
+                 
+                 <div>
+                    <label for="experience">Années d'expérience:</label><br>
+                    <input type="number" id="experience" min="0" placeholder="Entre Années d'expérience" required><br><br>
+                 </div>
+                   
+                  <div>
+                         <label for="description">Description:</label><br>
+                         <textarea class="border text-sm w-[630px] mb-3.5 p-2.5 rounded-md border-solid border-[#ccc]" id="description" name="description" rows="5" cols="30"  required></textarea><br><br>
+                  </div>
+                   
+                </div>
+            </section> -->
 
             <!-- Certifications  -->
-            <section id="section7" class="section ">
-                <p>let go</p>
-             </section>
+            <!-- <section id="section7" class="section ">
+                 <div class="info-imp">
+            <h2 class="text-blue-700 text-xl mb-4 text-center">Informations personnelles</h2>
+            <div class="flex justify-around mb-5 ">
+                <div class="group1">
+                     <input type="text" placeholder="Nom et prenom">
+                     <input type="tel" placeholder="Telephone">
+                    <input type="url" placeholder="https://github.com">
+                </div>
+               
+                <div class="group2">
+                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Adresse">
+                    <input type="url" placeholder="https://linkedin.com">
+                </div>
+            </div>
+        </div>
+             </section> -->
 
        
-        <div class="btns">
-            <button id="btn-back">Precedent</button>
-            <button id="btn-move">Suivant</button>
+        <div class="flex justify-between mt-5">
+            <button id="btn-back" class=" cursor-pointer bg-blue-800 text-[white] font-[bold] transition-[0.3s] px-5 py-2.5 rounded-[5px] border-[none]  ">Precedent</button>
+            <button id="btn-move"  class=" cursor-pointer bg-blue-800 text-[white] font-[bold] transition-[0.3s] px-5 py-2.5 rounded-[5px] border-[none] " >  Suivant</button>
         </div>
         
 
