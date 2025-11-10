@@ -58,3 +58,26 @@ button:hover {
 .section {
   display:none;
 }
+
+.lang-item{
+  display: flex;
+  justify-content: space-between;
+  background-color: #f3f4f6;
+  padding: 10px 15px;
+  border-radius:8px;
+
+}
+
+.lang-item p{
+  font-weight: 600;
+  color:#333;
+
+}
+
+.lang-item span{
+  background-color:dodgerblue;
+  color:white;
+  border-radius:8px;
+  font-size:14px;
+
+}
