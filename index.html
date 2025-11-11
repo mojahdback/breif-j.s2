@@ -16,7 +16,7 @@
         <div class="text-blue-700">
             <h2 class="text-center mb-5 text-2xl"> Formulaire de creation de CV </h2>
             <div class="flex justify-between">
-                <span>Etape 1 sur 7</span>
+                <span>Etape 1 sur 7 </span>
                 <span> 15% </span>
             </div>
             <div id="line-progress" class="w-full h-2 mb-5 overflow-hidden">
@@ -157,30 +157,35 @@
 
            <!-- Expériences professionnelles -->
                <section id="section6" class="section ">
+                <div id="list-exp" class="mt-1/5 flex-col gap-5 p-3 rounded-md lang-item" > 
+
+                </div>
                
-                        <h2 class="text-blue-700 text-xl mb-4"><strong>Expérience professionnelle</strong></h2>
+                 <h2 class="text-blue-700 text-xl mb-4"><strong>Expérience professionnelle</strong></h2>
                  <div class="flex justify-between">
                       <div>
-                      <label for="fonc">Fonction:</label><br>
-                      <input class="border text-sm w-[300px] mb-3.5 p-2.5 rounded-md border-solid border-[#ccc]" type="text" id="fonc"  placeholder="par ex: Marketing internet "><br><br>
+                      <label for="input-fonc">Fonction:</label><br>
+                      <input class="border text-sm w-[300px] mb-3.5 p-2.5 rounded-md border-solid border-[#ccc]" type="text" id="input-fonc"  placeholder="par ex: Marketing internet "><br><br>
                      </div>
 
                      <div >
-                      <label for="loca"> Localité:</label><br>
-                      <input class="border text-sm w-[300px] mb-3.5 p-2.5 rounded-md border-solid border-[#ccc]" type="text" id="loca"  placeholder="par ex: Maroc "><br><br>
+                      <label for="input-loca"> Localité:</label><br>
+                      <input class="border text-sm w-[300px] mb-3.5 p-2.5 rounded-md border-solid border-[#ccc]" type="text" id="input-loca"  placeholder="par ex: Maroc "><br><br>
                       </div>
 
                  </div>
                  
                  <div>
-                    <label for="experience">Années d'expérience:</label><br>
-                    <input type="number" id="experience" min="0" placeholder="Entre Années d'expérience" required><br><br>
+                    <label for="how-much">Années d'expérience:</label><br>
+                    <input type="number" id="how-much" min="0" placeholder="Entre Années d'expérience" required><br><br>
                  </div>
                    
                   <div>
-                         <label for="description">Description:</label><br>
-                         <textarea class="border text-sm w-[630px] mb-3.5 p-2.5 rounded-md border-solid border-[#ccc]" id="description" name="description" rows="5" cols="30"  required></textarea><br><br>
+                         <label for="input-des">Description:</label><br>
+                         <textarea class="border text-sm w-[630px] mb-3.5 p-2.5 rounded-md border-solid border-[#ccc]" id="input-des" name="description" rows="5" cols="30"  required></textarea><br><br>
                   </div>
+
+                  <button id="bouton" class="w-full p-3  border-solid bg-gray-200 rounded-md ">Add New Langue</button>
                    
           
             </section> 
