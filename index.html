@@ -14,13 +14,32 @@
     <main id="main" class="bg-white p-8">
         
         <div class="text-blue-700">
-            <h2 class="text-center mb-5 text-2xl"> Formulaire de creation de CV </h2>
+            <h2 class="text-center mb-5 text-2xl"> <strong> Formulaire de creation de CV </strong> </h2>
             <div class="flex justify-between">
-                <span>Etape 1 sur 7 </span>
-                <span> 15% </span>
+                <span class="etape active"> Etape 1 sur 7 </span>
+                <span class="etape"> Etape 2 sur 7 </span>
+                <span class="etape"> Etape 3 sur 7 </span>
+                <span class="etape"> Etape 4 sur 7 </span>
+                <span class="etape"> Etape 5 sur 7 </span>
+                <span class="etape"> Etape 6 sur 7 </span>
+                 <span class="etape"> Etape 7 sur 7 </span>
+
+                <span class="price active"> 15% </span>
+                      <span class="price "> 30% </span>
+                        <span class="price"> 45% </span>
+                         <span class="price"> 60% </span>
+                           <span class="price"> 75% </span>
+                            <span class="price"> 85% </span>
+                             <span class="price"> 100% </span>
             </div>
             <div id="line-progress" class="w-full h-2 mb-5 overflow-hidden">
-                <div class="w-1/5 h-full bg-blue-500"></div>
+                <div class="w-12 h-full bg-blue-500 line active"></div>
+                <div class="w-24 h-full bg-blue-500 line "></div>
+                <div class="w-1/5 h-full bg-blue-500 line "></div>
+                <div class="w-2/5 h-full bg-blue-500 line "></div>
+                <div class="w-3/5 h-full bg-blue-500 line "></div>
+                <div class="w-4/5 h-full bg-blue-500 line "> </div>
+                <div class="w-full h-full bg-blue-500 line "></div>
             </div>
         </div>
 
@@ -41,19 +60,25 @@
         <section  id="section1" class="section active">
        
 
-        <div class="info-imp">
+        <div class="info-per">
             <h2 class="text-blue-700 text-xl mb-4 text-center"><strong>Informations personnelles</strong></h2>
             <div class="flex justify-around mb-5 ">
                 <div class="group1">
-                     <input type="text" placeholder="Nom et prenom">
-                     <input type="tel" placeholder="Telephone">
-                    <input type="url" placeholder="https://github.com">
+                     <input class="input-name" type="text" placeholder="Nom et prenom">
+                     <span id="msg-name"></span>
+                     <input class="input-tel" type="tel" placeholder="Telephone">
+                      <span id="msg-tel"></span>
+                    <input class="input-git" type="url" placeholder="https://github.com">
+                     <span id="msg-git"></span>
                 </div>
                
                 <div class="group2">
-                    <input type="email" placeholder="Email">
-                    <input type="text" placeholder="Adresse">
-                    <input type="url" placeholder="https://linkedin.com">
+                    <input class="input-email" type="email" placeholder="Email">
+                     <span id="msg-email"></span>
+                    <input id="input-adr" type="text" placeholder="Adresse">
+                     <span id="msg-adr"></span>
+                    <input class="input-link" type="url" placeholder="https://linkedin.com">
+                     <span id="msg-link"></span>
                 </div>
             </div>
         </div>
@@ -65,13 +90,14 @@
                <h2 class="text-blue-700 text-xl mb-4 "><strong>Détails professionnels</strong></h2>
             <div>
                  <label for="titre">Titre du poste :</label><br>
-                 <input class="border text-sm w-[630px] mb-3.5 p-3 rounded-md border-solid border-[#ccc]" type="text" id="titre" name="titre" placeholder="Ex. : Chef de projet, Développeur web" required>
+                 <input class="border text-sm w-[630px] mb-3.5 p-3 rounded-md border-solid border-[#ccc] input" type="text" id="titre" name="titre" placeholder="Ex. : Chef de projet, Développeur web" required>
+                 <span class="msg-data"> </span>
 
             </div>
            
              <label for="resume">Résumé de profil :</label>
-             <textarea class="border text-sm w-[630px] mb-3.5 p-3 rounded-md border-solid border-[#ccc]" id="resume" name="resume" placeholder="Décrivez brièvement votre expérience, vos compétences et vos objectifs professionnels..." required></textarea>
-
+             <textarea class="border text-sm w-[630px] mb-3.5 p-3 rounded-md border-solid border-[#ccc] input" id="resume" name="resume" placeholder="Décrivez brièvement votre expérience, vos compétences et vos objectifs professionnels..." required></textarea>
+             <span class="msg-data"></span>
         
             </form>
 
@@ -83,7 +109,7 @@
 
                </div>
                  <h2 class="text-blue-700 text-xl mb-4 "><strong>Compétences</strong></h2>
-              <div class="flex justify-between mb-5 ">
+                <div class="flex justify-between mb-5 ">
                 <div>
                     <label for="comp">Compétence:</label><br>
                      <input class="border text-sm w-[300px] mb-3.5 p-2.5 rounded-md border-solid border-[#ccc] your-input" type="text" id="comp"  placeholder="par ex: HTML "><br><br>
@@ -150,7 +176,7 @@
                 <h2 class="text-blue-700 text-xl mb-4 "><strong>Loisirs</strong></h2>
                  <div>
                       <label for="input-loi">Loisir:</label><br>
-                      <input class="border text-sm w-[630px] mb-4 p-3 rounded-md border-solid border-[#ccc] " type="text" id="input-loi"  placeholder="par ex: Lecture "><br><br>
+                      <input class="border text-sm w-[630px] mb-4 p-3 rounded-md border-solid border-[#ccc] input" type="text" id="input-loi"  placeholder="par ex: Lecture "><br><br>
                  </div>
                  <button id="add-btn" class="w-full p-3  border-solid bg-gray-200 rounded-md ">Add New Langue</button>
            </section> 
@@ -165,19 +191,22 @@
                  <div class="flex justify-between">
                       <div>
                       <label for="input-fonc">Fonction:</label><br>
-                      <input class="border text-sm w-[300px] mb-3.5 p-2.5 rounded-md border-solid border-[#ccc]" type="text" id="input-fonc"  placeholder="par ex: Marketing internet "><br><br>
+                      <input class="border text-sm w-[300px] mb-3.5 p-2.5 rounded-md border-solid border-[#ccc] input" type="text" id="input-fonc"  placeholder="par ex: Marketing internet "><br><br>
+                        <span class="msg-data"></span>
                      </div>
 
                      <div >
                       <label for="input-loca"> Localité:</label><br>
-                      <input class="border text-sm w-[300px] mb-3.5 p-2.5 rounded-md border-solid border-[#ccc]" type="text" id="input-loca"  placeholder="par ex: Maroc "><br><br>
+                      <input class="border text-sm w-[300px] mb-3.5 p-2.5 rounded-md border-solid border-[#ccc] input" type="text" id="input-loca"  placeholder="par ex: Maroc "><br><br>
+                        <span class="msg-data"></span>
                       </div>
 
                  </div>
                  
                  <div>
                     <label for="how-much">Années d'expérience:</label><br>
-                    <input type="number" id="how-much" min="0" placeholder="Entre Années d'expérience" required><br><br>
+                    <input class ="input" type="number" id="how-much" min="0" placeholder="Entre Années d'expérience" required><br><br>
+                      <span class="msg-data"></span>
                  </div>
                    
                   <div>
@@ -190,9 +219,18 @@
           
             </section> 
 
-            <!-- Certifications  -->
+            <!-- CV  -->
           <section id="section7" class="section ">
-            <p>Vide</p>
+            <h2 class="text-center"> CV bdf </h2>
+            <div>
+              <p id="nom"> Nom et prenom  : </p>
+              <p id="email"> Email : </p>
+              <p id="tel"> Telephone : </p>
+              <p id="adr"> Adresse : </p>
+              <p id="github"> github : </p>
+              <p id="linkedin"> linkedin : </p>
+            </div>
+            
           </section> 
 
        

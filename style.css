@@ -59,6 +59,27 @@ button:hover {
   display:none;
 }
 
+.etape.active{
+  display: block;
+}
+.etape{
+  display: none;
+}
+.price.active{
+  display: block;
+}
+.price{
+  display:none;
+}
+.line.active{
+    display: block;
+}
+.line {
+    display: none;
+}
+
+
+
 .lang-item{
   display: flex;
   justify-content: space-between;
